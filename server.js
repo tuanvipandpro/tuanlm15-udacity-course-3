@@ -33,6 +33,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
 
       if (!image_url) {
         res.status(400).send("The request is invalid !!!")
+        return
       }
 
       try {
